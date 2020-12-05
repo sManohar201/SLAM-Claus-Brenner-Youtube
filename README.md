@@ -5,6 +5,7 @@ This repository contains solution for SLAM lectures taught by Claus Brenner on [
 - Python 2
 - Matplotlib
 - Pylab
+
 It is best to have either Anaconda or miniconda installation on your system, as it should satisfy all the requirements by default. 
 
 ## Instructions to run the solutions
