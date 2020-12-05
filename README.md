@@ -11,5 +11,5 @@ It is best to have either Anaconda or miniconda installation on your system, as 
 ## Instructions to run the solutions
 
 ## Contents of the Lecture
-### 1) Motion Model
-### 2) Scan Matching
+### 1) Motion Modeling and Feature engineering
+### 2) Pose estimation with Scan Matching
