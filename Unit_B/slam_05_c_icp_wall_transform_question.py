@@ -25,9 +25,9 @@ def get_icp_transform(world_points, iterations):
     # Then loop for j in xrange(iterations):
     for _ in xrange(iterations):
          #   Transform the world_points using the curent overall_trafo
-         world_points = [apply_transform(overall_trafo, p) for p in world_points]
+         world_points_tr = [apply_transform(overall_trafo, p) for p in world_points]
          #   Call get_correspoinding_points_on_wall(...)
-         left, right = get_corresponding_points_on_wall(world_points)
+         left, right = get_corresponding_points_on_wall(world_points_tr)
          #   Determine transformation which is needed "on top of" the current
          trafo = estimate_transform(left, right, fix_scale=True)
          #   Concatenate the found transformation with the current overall_trafo
@@ -72,7 +72,7 @@ if __name__ == '__main__':
         # Get the transformation.
         # You may play withe the number of iterations here to see
         # the effect on the trajectory!
-        trafo = get_icp_transform(world_points, iterations = 5)
+        trafo = get_icp_transform(world_points, iterations = 50)
 
         # Correct the initial position using trafo.
         pose = correct_pose(pose, trafo)
