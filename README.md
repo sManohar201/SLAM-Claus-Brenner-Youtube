@@ -13,3 +13,4 @@ It is best to have either Anaconda or miniconda installation on your system, as 
 ## Contents of the Lecture
 ### 1) Motion Modeling and Feature engineering
 ### 2) Pose estimation with Scan Matching
+### 3) Bayes filter and 1-D Kalman fiter
